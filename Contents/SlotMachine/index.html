@@ -22,7 +22,7 @@
 
     text{
         font-family:Helvetica, Arial, sans-serif;
-        font-size:25px;
+        font-size:22px;
         pointer-events:none;
     }
     #chart{
@@ -34,10 +34,10 @@
     }
     #question{
         position: absolute;
-        width:500px;
+        width:550px;
         height:500px;
         top: 150px;
-    left: 320px;
+    left: 168px;
     }
     #question h1{
         font-size: 50px;
@@ -59,7 +59,7 @@
 
 <header >
     <div class="logo">
-        <img onclick="FC_ContentsCall('Home')" src="../../assets/logo.png">
+        <img onclick="FC_ContentsCall('Home')" src="../../assets/logo.png"><img src="../../assets/FTE-logo.jpg" style="width:399px" >
     </div>
     <span class="col-sm-3 date-time" style="text-align: left; color: #3c3c3c">
         
@@ -239,11 +239,11 @@
                         .attr("fill", "#111");
                     //populate question
                     d3.select("#question h1")
-                        .text(data[picked].question);
+                        .text("Congratulations! You won " + data[picked].question);
                         //data[picked].value=data[picked].value-1;
                         //alert(data[picked].value);
                         var temp=getIndex(data[picked].value);
-                        alert(data[picked].id);
+                        //alert(data[picked].id);
                         updateQuantity(data[picked].id);
                         quantity[temp]=quantity[temp]-1;
                         /*$("#demo").html('<ul><li>Robot Eraser: '+quantity[0]+'</li><li>Robot bendable:'+quantity[1]+'</li><li>Robot wind-ups: '+quantity[2]+'</li><li>$50 Starbucks gift cards: '+quantity[3]+'</li><li>CDS floor stands: '+quantity[4]+'</li><li>Robot stickers: '+quantity[5]+'</li><li>Robot gummies: '+quantity[6]+'</li></li><li>Banner stands: '+quantity[7]+'</li></li><li>$10 Amazon cards: '+quantity[8]+'</li></li><li>$5 Starbucks cards: '+quantity[9]+'</li></li><li>$100 Amazon card: '+quantity[10]+'</li></ul>');
