@@ -286,7 +286,7 @@ function SendEmail()
     var dataURL = canvas.toDataURL();
       $.ajax({
         type: "POST",
-        url: "http://robotaisolutions.com/robot-work/valeo.php",
+        url: "http://localhost:880/valeo/valeo.php",
         data: { 
            imgBase64: dataURL,
            'email':addr
