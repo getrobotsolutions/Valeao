@@ -23,6 +23,8 @@ overflow: hidden;
 embed{
 	    position: absolute;
     top: 100px;
+    left: 0;
+    z-index: -1;
 }
 </style>
 
@@ -53,13 +55,13 @@ function JSMain()
 </head>
 
 <body onload="JSMain()" id="visible" bgcolor="black">
-	<header style="width: 1080px">
+	<header style="width: 1080px;z-index: 10000;">
     <div class="logo">
         <img onclick="FC_GoMain()" src="../../assets/logo.png"><img src="../../assets/FTE-logo.jpg" style="width:399px" >
     </div>
 </header>
 
-<nav style="width: 1080px;">
+<nav style="width: 1080px;;z-index: 10000;">">
     <span class="home-text" onclick="FC_GoMain()" style="width: 60px;"><img class="home" src="../../assets/icons/home.png" alt="home" width="60px"></span>
     
 </nav>
