@@ -275,14 +275,14 @@ function SendEmail()
     // 이미지 파일명 지정 및 저장
     var d = new Date();
 	var fileName = d.getTime();	
-	SaveImage(fileName);
+	SaveImage(addr);
     
     // 메일로 전송
     if (isRobot)
     {
         window.external.SendEmail(addr, imageFilePath, subject, body, mail_server, mail_addr_sender, pswd, port, ssl);
     }
-    var canvas = document.getElementById('camImage');
+    /*var canvas = document.getElementById('camImage');
     var dataURL = canvas.toDataURL();
       $.ajax({
         type: "POST",
@@ -293,7 +293,7 @@ function SendEmail()
         }
       }).done(function(response) {
         console.log('saved: ' + response); 
-      });
+      });*/
     // 키보드 숨김
     HideKeyboard();
             document.getElementById("email_state").src = "Images/email_success_"+c_language+".png";
