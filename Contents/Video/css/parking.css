@@ -137,14 +137,25 @@ p{
 }
 .video-box{    
     text-align: center;
-    background-color: #4b788d;
+    background-color: #99ca3d;
     width: 335px;
     height: 360px;
     margin: 12px;
     padding: 0px;
-    color: white;
+    color: #4b788d ;
     border-radius: 5px;
     margin-bottom: 50px;
   }
-.video-box img{   }
+.video-box2{
+  text-align: center;
+    background-color: #99ca3d;
+    width: 415px;
+    height: 470px;
+    margin: 12px;
+    padding: 0px;
+    color: #4b788d ;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+.video-box2 img{      width: 340px; }
 .video-box h2{margin-top: 0px;}
