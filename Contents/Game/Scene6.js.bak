@@ -1,0 +1,100 @@
+﻿//*******************************************************************************
+//   FURO-D Main Page Contents Template for Furoware 2.0 :  2015.10.30  by  Lee Won Yong
+//
+//   Comment : (1) FC_ : Flash Call (Flash에서 JS의 function을 호출) 
+//             (2) App.JC_ : Javascritp call (JS에서 Flash의 function을 호출) 
+//             (3) window.external.* : API Command 호출 (FuroContents.exe내의 function 호출)
+//             (4) On* : API Event (FuroContents.exe에서 Event 발생)
+//             (5) FR_ : FutureRobot Function 
+//             (6) UF_ : User Function...  
+//*******************************************************************************
+
+//*******************************************************************************
+//  << Comment >>
+//  1. MainPage에서는 다국어 지원을 해야 하므로, *_kr, *_Cn, *_En 등으로 분류한다.
+//     (Sub Page에서는 언어별 개별 Contents를 제작하므로 구분할 필요가 없다.)  
+//*******************************************************************************
+
+// [ Variables Setting ] ----------------------------
+
+
+
+
+// Test Code Sample.
+//window.external.ContentsUserFunction("LEEEE"); 
+
+//================================================================================
+// FuroEngine --> Flash Contents
+//================================================================================
+function OnVROnOff(strPara)
+{
+	App.JC_VROnOff(strPara);
+//	alert("OnVROnOff = "+strPara);
+}
+
+
+function OnVoiceLevel(strLevel)
+{
+	App.JC_VoiceLevel(strLevel);
+}
+
+
+function OnTTSStart(strText)
+{
+//	App.JC_TTSBallon(strText);
+}
+
+function OnTTSCompleted()
+{
+//	alert("OnTTSCompleted = ");
+//	App.JC_TTSBallonHide();
+}
+
+
+//================================================================================
+// FuroEngine --> Flash Contents Userfunction
+//================================================================================
+function OnCmdVRResult(strPara)
+{
+	//alert("OnCmdVRResult = " + strPara);
+	App.JC_OnCmdVRResult(strPara);
+}
+
+
+//================================================================================
+// Flash Contents --> FuroEngine
+//================================================================================
+function FC_GoMain()
+{
+	location.href = "../../maincontents.htm";
+
+	//window.external.ContentsUserFunction('GoMain,0');
+}
+
+// GetCaptureImage : Capture된 Iamge를 Flash로 전송함 ----------------------
+function GetCaptureImage()
+{
+	return window.external.GetCaptureImageBase64();
+}
+
+function testImage(Para)
+{
+	alert(Para);
+}
+
+function FC_ChangeState(nState)
+{
+	//alert("FC_ChangeState = ChangeState1");
+	//window.external.ContentsUserFunction('ChangeState' + nState + ',0'); // ',0' <- 의미없음.
+}
+
+function OnUserApproached()
+{
+	
+}
+
+function OnUserDisappeared()
+{
+	location.href = "../../IdlePage/IdlePage.htm";
+}
+

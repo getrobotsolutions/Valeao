@@ -1,0 +1,82 @@
+<!--
+//*****************************************************************************************
+// Contents Framework : Main Contents Part.
+//                      Date : 2015.10.30
+//
+// Remark - (1) for Furoware2.0 Version First Version (2015.10.30) _ coded by LWY 
+//*****************************************************************************************
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html" charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+<style>
+<!-- 
+body {margin:0;padding:0;}
+#visible
+{
+overflow: hidden; 
+}
+-->
+
+</style>
+
+<!-- 기본으로 포함되어야 하는 js -->
+<script language="JavaScript" type="text/javascript" src="../Common/Scripts/FlashPlayer.js"></script>
+<!-- Furoware2.0 -> RobotCommand.js / RobotEvent.js 로 이름 변경 (2015.10.30)-->
+<script language="JavaScript" type="text/javascript" src="../Common/Scripts/BaseCommand.js"></script>
+<script language="JavaScript" type="text/javascript" src="../Common/Scripts/BaseEvent.js"></script>
+
+<!-- Optional Function (2015.10.30)
+<script language="JavaScript" type="text/javascript" src="Scripts/JoystickFunction.js"></script>
+-->
+<!-- 추가적으로 포함되는 js -->
+<script language="JavaScript" type="text/javascript" src="Scene6.js"></script>
+
+
+<script language="JavaScript" type="text/javascript">
+function JSMain()
+{
+	//State 변경시(Current Contents Page 진입시) Default로 처리해야 하는 Command.
+	//StopSpeech();					//립싱크를 정지하기 위함.
+	//StartHumanFollow('false');	//사람추적 Off..
+	//ChangeLanguage('korean');
+}
+
+</script>
+</head>
+
+<body onload="JSMain()" id="visible" bgcolor="black">
+<script language="JavaScript" type="text/javascript">
+
+	var ContentsWidth = 1080;
+	var ContentsHeight = 1920;			// <-- 하단에 동영상이 플레이되면 1200, 동영상이 없으면, 1920
+	var ContentsName = 'Scene6';	// <-- 여기에 Flash 파일명을 적어주세요.
+
+	AC_FL_RunContent(
+		'codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0',
+		'width', ContentsWidth,
+		'height', ContentsHeight,		
+		'src', ContentsName,  
+		'quality', 'high',
+		'pluginspage', 'http://www.adobe.com/go/getflashplayer_kr',
+		'align', 'right', //middle
+		'play', 'false',
+		'loop', 'false',
+		'scale', 'showall',
+		'wmode', 'transparent',
+		'devicefont', 'false',
+		'id', 'App',
+		'bgcolor', '#ffffff',
+		'name', 'App',
+		'menu', 'false',
+		'allowFullScreen', 'false',
+		'allowScriptAccess','always',
+		'movie', ContentsName,  
+		'salign', 'top'
+		); //end AC code
+</script>
+</body>
+</html>
