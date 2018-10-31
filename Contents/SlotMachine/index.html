@@ -17,7 +17,7 @@
   <link href="../../css/Main.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="../../boots/css/bootstrap.min.css">
   <link href="css/eat.css" rel="stylesheet" type="text/css" />
-  <script src="http://localhost/valeo/" type="text/javascript"></script>
+  <script src="http://localhost:880/valeo/" type="text/javascript"></script>
 <style type="text/css">
 
     text{
@@ -290,7 +290,7 @@
         }
         function updateQuantity(id) {
             $.ajax({
-                url:"http://localhost/valeo/updateQuantity.php",
+                url:"http://localhost:880/valeo/updateQuantity.php",
                 type:"post",
                 data:{'id':id},
                 success: function(response) {
