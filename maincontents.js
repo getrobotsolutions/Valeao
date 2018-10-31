@@ -2,11 +2,11 @@
 
 
         speak[0] = "Smile! You are about to become a robot.";
-        speak[1] = "";
-        speak[2] = "spin the wheel for your chance to win great prizes";
+        speak[1] = "watch some great videos about valeo and FTE";
+        speak[2] = "spin the wheel and win a great prize!";
         speak[3] = "Say Cheese!";
         speak[4] = "Pick a song and let’s boogie!";
-        speak[5] = "";
+        speak[5] = "try to win rock paper scissors and land on the leaderboard";
         speak[6] = " ";
         speak[7] = "";
         speak[8] = "";

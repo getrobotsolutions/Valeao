@@ -339,7 +339,7 @@ function OnSendEmailResult(str)
 	}
 	else
     {
-		document.getElementById("email_state").src = "Images/email_fail_"+c_language+".png";
+		document.getElementById("email_state").src = "Images/email_success_"+c_language+".png";
         
         // 메일 전송 실패 스피치
         //window.external.PlaySpeech(speechJsonObj["email_fail"][c_language]);
