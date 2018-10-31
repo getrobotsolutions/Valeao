@@ -20,7 +20,10 @@ body {margin:0;padding:0;}
 overflow: hidden; 
 }
 -->
-
+embed{
+	    position: absolute;
+    top: 100px;
+}
 </style>
 
 <!-- 기본으로 포함되어야 하는 js -->
@@ -34,6 +37,7 @@ overflow: hidden;
 -->
 <!-- 추가적으로 포함되는 js -->
 <script language="JavaScript" type="text/javascript" src="Scene6.js"></script>
+<link href="../../css/Main.css" rel="stylesheet" type="text/css" />
 
 
 <script language="JavaScript" type="text/javascript">
@@ -49,6 +53,16 @@ function JSMain()
 </head>
 
 <body onload="JSMain()" id="visible" bgcolor="black">
+	<header style="width: 1080px">
+    <div class="logo">
+        <img onclick="FC_GoMain()" src="../../assets/logo.png"><img src="../../assets/FTE-logo.jpg" style="width:399px" >
+    </div>
+</header>
+
+<nav style="width: 1080px;">
+    <span class="home-text" onclick="FC_GoMain()" style="width: 60px;"><img class="home" src="../../assets/icons/home.png" alt="home" width="60px"></span>
+    
+</nav>
 <script language="JavaScript" type="text/javascript">
 
 	var ContentsWidth = 1080;
