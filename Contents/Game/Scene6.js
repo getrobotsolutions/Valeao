@@ -66,7 +66,7 @@ function OnCmdVRResult(strPara)
 //================================================================================
 function FC_GoMain()
 {
-	location.href = "../../maincontents.html";
+	location.href = "../../maincontents.htm";
 
 	//window.external.ContentsUserFunction('GoMain,0');
 }
