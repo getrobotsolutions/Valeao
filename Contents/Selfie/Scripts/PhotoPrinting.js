@@ -296,7 +296,7 @@ function SendEmail()
       });*/
     // 키보드 숨김
     HideKeyboard();
-            document.getElementById("email_state").src = "Images/email_success_"+c_language+".png";
+            document.getElementById("email_state").src = "Images/email_success_en-us.png";
 }
 
 /* 이미지 파일 저장 */
@@ -339,7 +339,7 @@ function OnSendEmailResult(str)
 	}
 	else
     {
-		document.getElementById("email_state").src = "Images/email_success_"+c_language+".png";
+		document.getElementById("email_state").src = "Images/email_success_en-us.png";
         
         // 메일 전송 실패 스피치
         //window.external.PlaySpeech(speechJsonObj["email_fail"][c_language]);
